@@ -1,0 +1,58 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body Related */
+body {
+  font-family: "Outfit";
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body h1 {
+  font-family: "Outfit";
+}
+
+.primary-text {
+  color: rgb(243, 114, 44);
+}
+
+.secondary-text {
+  color: rgb(104, 185, 132);
+}
+
+/* Navbar Related */
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+  width: 80%;
+  margin: auto;
+}
+
+nav h1 {
+  flex-grow: 8;
+  font-family: "Sour Gummy";
+}
+
+nav a {
+  flex-grow: 0.4;
+}
+
+/* Header Related */
+header {
+  background-color: rgb(252, 248, 240);
+}
+
+.header-container {
+  width: 80%;
+}
+/* Main Related */
+.main-container {
+}
+/* Footer Related */
+.footer-container {
+}
