@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Craftcycle</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
     <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,9 +23,8 @@
         <h1 class="primary-text">Craftcycle</h1>
         <a href="">Home</a>
         <a href="">Catalog</a>
-        <a href="">Contact</a>
-        <a href="">Sign Up</a>
-        <a href="">cart</a>
+
+        <a href=""><i class="fi fi-rr-shopping-cart"></i></a>
       </section>
     </nav>
     <header>
@@ -37,7 +40,23 @@
           <a href="" class="header-shop-button">Shop Now!</a>
         </section>
         <section class="header-image-container">
-          <img src="" alt="" class="header-image" />This is an image.
+          <img src="image/cactus.png" alt="" class="header-image" /><img
+            src="image/cake.png"
+            alt=""
+            class="header-image"
+          /><img src="image/cherry.png" alt="" class="header-image" /><img
+            src="image/keychain.png"
+            alt=""
+            class="header-image"
+          /><img src="image/mirror.png" alt="" class="header-image" /><img
+            src="image/pin.png"
+            alt=""
+            class="header-image"
+          /><img src="image/teabag.png" alt="" class="header-image" /><img
+            src="image/cactus.png"
+            alt=""
+            class="header-image"
+          /><img src="image/cake.png" alt="" class="header-image" />
         </section>
       </section>
     </header>
@@ -49,9 +68,32 @@
         </section>
         <section class="main-featured">
           <div class="main-product-card">
-            <img src="" alt="" class="main-product-card-image" />This is an
-            image.
-            <p class="main-product-card-title">Cake Charm Kit</p>
+            <img src="image/pin.png" alt="" class="main-product-card-image" />
+            <p class="main-product-card-title">Bottle Cap Pin Kit</p>
+            <div>
+              <p class="main-product-card-price">Rp 7.000</p>
+              <a href="" class="main-product-card-add-button">+</a>
+            </div>
+          </div>
+          <div class="main-product-card">
+            <img
+              src="image/mirror.png"
+              alt=""
+              class="main-product-card-image"
+            />
+            <p class="main-product-card-title">Mirror Charm Kit</p>
+            <div>
+              <p class="main-product-card-price">Rp 7.000</p>
+              <a href="" class="main-product-card-add-button">+</a>
+            </div>
+          </div>
+          <div class="main-product-card">
+            <img
+              src="image/cherry.png"
+              alt=""
+              class="main-product-card-image"
+            />
+            <p class="main-product-card-title">Baby Cherry Kit</p>
             <div>
               <p class="main-product-card-price">Rp 7.000</p>
               <a href="" class="main-product-card-add-button">+</a>
@@ -60,11 +102,24 @@
         </section>
         <section class="main-benefits">
           <div class="main-benefits-card">
-            <h1>This is the icon.</h1>
-            <h1>Step-by-Step Video</h1>
+            <h1 class="secondary-text">Step-by-Step Video</h1>
             <p>
               Every kit includes a full, easy-to-follow video tutorial for all
               skill levels.
+            </p>
+          </div>
+          <div class="main-benefits-card">
+            <h1 class="secondary-text">High Quality Materials</h1>
+            <p>
+              We source only the best materials to ensure your final craft is
+              beautiful and durable.
+            </p>
+          </div>
+          <div class="main-benefits-card">
+            <h1 class="secondary-text">Sustainable Crafting</h1>
+            <p>
+              Committed to low waste and mindful sourcing in every kit we
+              design.
             </p>
           </div>
         </section>
@@ -80,9 +135,11 @@
                 type="email"
                 name=""
                 id=""
-                placeholder="Enter your email address"
+                placeholder="Enter your email address..."
+                class="main-sign-up-form"
               />
             </form>
+            <a href="" class="main-sign-up-button">Sign Up!</a>
           </div>
         </section>
       </section>

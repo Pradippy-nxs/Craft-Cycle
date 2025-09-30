@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: rgb(0, 0, 0, 0.7);
 }
 
 body h1 {
@@ -24,35 +25,307 @@ body h1 {
 }
 
 /* Navbar Related */
+
+nav {
+  background: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(0, 0, 0, 0.2);
+}
 .nav-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: auto;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
 nav h1 {
   flex-grow: 8;
   font-family: "Sour Gummy";
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
 }
 
 nav a {
   flex-grow: 0.4;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  transition: ease-in-out 200ms;
 }
-
+nav a:hover {
+  background-color: rgb(243, 114, 44);
+  color: rgb(255, 255, 255);
+  transition: ease-in-out 200ms;
+}
+nav a i {
+  font-size: 20px;
+}
 /* Header Related */
 header {
   background-color: rgb(252, 248, 240);
+  padding: 30px;
 }
 
 .header-container {
-  width: 80%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+.header-image-container {
+  width: 1000px !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1px;
+  text-align: center;
+}
+
+.header-image {
+  width: 33%;
+  height: 100px;
+  object-fit: cover;
+  /* margin: auto; */
+  filter: brightness(100%);
+  border-radius: 10px;
+  transition: ease-in-out 200ms;
+}
+.header-image:hover {
+  filter: brightness(75%);
+  transition: ease-in-out 200ms;
+}
+.header-shop-button {
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(243, 114, 44);
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  transition: ease-in-out 200ms;
+}
+.header-shop-button:hover {
+  background-color: rgb(243, 114, 44, 0.1);
+  color: rgb(243, 114, 44);
+  font-weight: bold;
+  border: 1px dashed rgb(243, 114, 44);
+  transition: ease-in-out 200ms;
 }
 /* Main Related */
+main {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+}
+
 .main-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+}
+
+.main-header h1 {
+  margin: 0;
+}
+
+.main-featured {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-product-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.14);
+  border-radius: 15px;
+}
+
+.main-product-card-image {
+  border: 2px dashed rgb(243, 114, 44);
+
+  height: 60%;
+  object-fit: cover;
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 15px;
+}
+
+.main-product-card-title {
+  margin: 0;
+  margin-top: 6px;
+  margin-left: 15px;
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.main-product-card div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.main-product-card-price {
+  flex-grow: 8;
+  text-align: left;
+  color: rgb(243, 114, 44);
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.main-product-card-add-button {
+  text-align: center;
+  text-decoration: none;
+  flex-grow: 1;
+  font-size: 20px;
+  background-color: rgb(104, 185, 132);
+  border-radius: 10%;
+  color: white;
+}
+
+.main-benefits {
+  background-color: rgb(243, 114, 44, 0.4);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  height: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.main-benefits-card {
+  background-color: rgb(255, 255, 255);
+  width: 250px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 6px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-benefits-card h1 {
+  font-size: 22px;
+  padding: 0;
+  font-weight: bold;
+}
+.main-benefits-card p {
+  font-size: 16px;
+  width: 90%;
+  margin: auto;
+}
+
+.main-sign-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main-sign-up-card h1 {
+  margin: 0;
+  padding: 10px;
+}
+.main-sign-up-card {
+  border-radius: 15px;
+  border: 1px solid rgb(104, 185, 132, 0.5);
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  transition: ease-in-out 200ms;
+}
+.main-sign-up-card:hover {
+  box-shadow: 0px 10px 15px rgb(104, 185, 132);
+  border: 0px solid rgb(243, 114, 44, 0.3);
+  transition: ease-in-out 200ms;
+}
+
+.main-sign-up-form {
+  width: 90%;
+  max-width: 400px;
+  padding: 12px 16px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgb(0, 0, 0, 0.5);
+  background-color: 255, 255, 255;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 15px;
+}
+
+.main-sign-up-form::placeholder {
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.main-sign-up-form:focus {
+  outline: none;
+  border-color: rgb(0, 0, 0, 0.5);
+}
+
+.main-sign-up-button {
+  text-decoration: none;
+  color: rgb(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 15px;
+  color: rgb(0,0,0,0.6);
+  font-weight: bold;
+  transition: ease-in-out 200ms;
+}
+.main-sign-up-button:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0, 0.5);
+  padding: 10px;
+  background-color: rgb(243, 114, 44);
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  transition: ease-in-out 200ms;
 }
 /* Footer Related */
+footer {
+  background-color: rgb(0, 0, 0, 0.8);
+  padding: 30px;
+}
 .footer-container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
